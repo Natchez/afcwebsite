@@ -1,0 +1,91 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "tailwindcss";
+
+@theme {
+  /*White Dot Studio*/
+  --color-wds-50: #F3F4F8;
+  --color-wds-100: #E1E4ED;
+  --color-wds-200: #C5CADB;
+  --color-wds-300: #A6AEC6;
+  --color-wds-400: #8791AD;
+  --color-wds-500: #566483;
+  --color-wds-600: #4E5B77;
+  --color-wds-700: #414C65;
+  --color-wds-800: #343C50;
+  --color-wds-900: #262A38;
+
+  /* FC Cookbook */
+  --color-fccb-50: #F8E5E5;
+  --color-fccb-100: #F1C8C8;
+  --color-fccb-200: #EBAAAA;
+  --color-fccb-300: #E38C8C;
+  --color-fccb-400: #DC6E6E;
+  --color-fccb-500: #D25A5A;
+  --color-fccb-600: #B84D4D;
+  --color-fccb-700: #9F4141;
+  --color-fccb-800: #853636;
+  --color-fccb-900: #6B2B2B;
+
+  /* Insurance */
+  --color-ins-50: #E1EFF4;
+  --color-ins-100: #B9D7E5;
+  --color-ins-200: #8ABBD2;
+  --color-ins-300: #5C9EBE;
+  --color-ins-400: #2E7FA4;
+  --color-ins-500: #10435C;
+  --color-ins-600: #0F3F57;
+  --color-ins-700: #0C3245;
+  --color-ins-800: #092634;
+  --color-ins-900: #061A22;
+
+  /* SendIt */
+  --color-sendit-50: #F3FBF9;
+  --color-sendit-100: #E0F5EE;
+  --color-sendit-200: #C3E9DE;
+  --color-sendit-300: #A1D8C8;
+  --color-sendit-400: #84C5B2;
+  --color-sendit-500: #70B39F;
+  --color-sendit-600: #5CA28D;
+  --color-sendit-700: #4C917A;
+  --color-sendit-800: #3B8167;
+  --color-sendit-900: #2C6653;
+
+  /* Virtumed Sharecloud */
+  --color-vtm-50: #F0F2F6;
+  --color-vtm-100: #E0E5EC;
+  --color-vtm-200: #D7DEE5;
+  --color-vtm-300: #BEC8D5;
+  --color-vtm-400: #A3B2C7;
+  --color-vtm-500: #95A5BC;
+  --color-vtm-600: #8499B5;
+  --color-vtm-700: #738EAE;
+  --color-vtm-800: #657FA2;
+  --color-vtm-900: #556686;
+
+  /* Escape From Tarkov */
+  --color-eft-50: #F2F2F2;
+  --color-eft-100: #E0E0E0;
+  --color-eft-200: #C4C4C4;
+  --color-eft-300: #A0A0A0;
+  --color-eft-400: #707070;
+  --color-eft-500: #4F4F4F;
+  --color-eft-600: #3A3A3A;
+  --color-eft-700: #2C2C2C;
+  --color-eft-800: #1A1A1A;
+  --color-eft-900: #000000;
+  --color-eft-accent: #99866A;
+
+  /*Common Colors*/
+  --color-light-contrast: #29292A;
+  --color-dark-contrast: #FFFCF6;
+
+  /*Font Family*/
+  --font-sans: Lato, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+
+html, body {
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
