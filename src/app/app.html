@@ -137,7 +137,7 @@
         </p>
       </div>
       <div
-        class="project md:col-span-1 grid gap-2 border-3 border-wds-400 rounded-lg p-4">
+        class="order-1 project md:col-span-1 grid gap-2 border-3 border-wds-400 rounded-lg p-4">
         <div class="">
           <h4 class="text-xl text-wds-900 font-bold">WhiteDot Studio</h4>
           <p class="text-sm">
@@ -167,25 +167,37 @@
           <div class="h-7 bg-wds-800"></div>
           <div class="h-7 bg-wds-900"></div>
         </div>
-        <a target="_blank"
-           class="bg-wds-600 rounded-full font-bold text-white text-center p-2 transition duration-150 ease-in-out transform hover:scale-103 hover:shadow-sm cursor-pointer"
-           rel="noopener noreferrer"
-           href="https://www.figma.com/proto/bL5Hj7HlDaLMDzeLnX0DBx/Resume?node-id=429-15&p=f&viewport=-56%2C140%2C0.11&t=UMeWVArJN7hEiYXc-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=546%3A1921&show-proto-sidebar=1">
-          <button class="cursor-pointer">
-            View Project (Desktop)
-          </button>
-        </a>
-        <a target="_blank"
-           class="bg-wds-600 rounded-full font-bold text-white text-center p-2 transition duration-150 ease-in-out transform hover:scale-103 hover:shadow-sm cursor-pointer"
-           rel="noopener noreferrer"
-           href="https://www.figma.com/proto/bL5Hj7HlDaLMDzeLnX0DBx/Resume?node-id=429-15&p=f&viewport=-877%2C291%2C0.48&t=UMeWVArJN7hEiYXc-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=475%3A5945&show-proto-sidebar=1">
-          <button class="cursor-pointer">
-            View Project (Mobile)
-          </button>
-        </a>
+        <button
+          class="bg-wds-600 rounded-full text-white text-center p-2 transition duration-150 ease-in-out transform hover:bg-wds-400 hover:shadow-sm cursor-pointer"
+          [matMenuTriggerFor]="wdsmenu"
+          href="">View Project
+        </button>
+        <mat-menu #wdsmenu="matMenu"
+                  class="bg-white">
+          <ul>
+            <li
+              class="p-2">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.figma.com/proto/bL5Hj7HlDaLMDzeLnX0DBx/Resume?node-id=429-15&p=f&viewport=-56%2C140%2C0.11&t=UMeWVArJN7hEiYXc-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=546%3A1921&show-proto-sidebar=1">
+                View Project On Desktop
+              </a>
+            </li>
+            <li
+              class="p-2">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.figma.com/proto/bL5Hj7HlDaLMDzeLnX0DBx/Resume?node-id=429-15&p=f&viewport=-877%2C291%2C0.48&t=UMeWVArJN7hEiYXc-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=475%3A5945&show-proto-sidebar=1">
+                View Project On Mobile Device
+              </a>
+            </li>
+          </ul>
+        </mat-menu>
       </div>
       <div
-        class="project md:col-span-1 grid gap-2 border-3 border-fccb-400 rounded-lg p-4">
+        class="order-6 project md:col-span-1 grid gap-2 border-3 border-fccb-400 rounded-lg p-4">
         <div class="">
           <h4 class="text-xl text-fccb-900 font-bold">FC Cookbook</h4>
           <p class="text-sm">
@@ -220,7 +232,7 @@
         </button>
       </div>
       <div
-        class="project md:col-span-1 grid gap-2 border-3 border-ins-400 rounded-lg p-4">
+        class="order-2 project md:col-span-1 grid gap-2 border-3 border-ins-400 rounded-lg p-4">
         <div class="">
           <h4 class="text-xl text-ins-900 font-bold">Insurance Manager</h4>
           <p class="text-sm">
@@ -250,25 +262,37 @@
           <div class="h-7 bg-ins-800"></div>
           <div class="h-7 bg-ins-900"></div>
         </div>
-        <a target="_blank"
-           class="bg-ins-600 rounded-full font-bold text-white text-center p-2 transition duration-150 ease-in-out transform hover:scale-103 hover:shadow-sm cursor-pointer"
-           rel="noopener noreferrer"
-           href="https://xd.adobe.com/view/6e4c69f4-8840-4c5d-adc8-8d3f5d5de695-3b1f/">
-          <button class="cursor-pointer">
-            View Project (Desktop)
-          </button>
-        </a>
-        <a target="_blank"
-           class="bg-ins-600 rounded-full font-bold text-white text-center p-2 transition duration-150 ease-in-out transform hover:scale-103 hover:shadow-sm cursor-pointer"
-           rel="noopener noreferrer"
-           href="https://www.figma.com/proto/dcS0TJ1zqMN2FqIFbifemz/Insurance-Platform?page-id=249%3A1843&node-id=349-12033&p=f&viewport=-490%2C58%2C0.23&t=98dfA88dnSnR2flz-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=349%3A12038">
-          <button class="cursor-pointer">
-            View Project (Mobile)
-          </button>
-        </a>
+        <button
+          class="bg-ins-600 rounded-full text-white text-center p-2 transition duration-150 ease-in-out transform hover:bg-ins-400 hover:shadow-sm cursor-pointer"
+          [matMenuTriggerFor]="wdsmenu"
+          href="">View Project
+        </button>
+        <mat-menu #wdsmenu="matMenu"
+                  class="bg-white">
+          <ul>
+            <li
+              class="p-2">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://xd.adobe.com/view/6e4c69f4-8840-4c5d-adc8-8d3f5d5de695-3b1f/">
+                View Project On Desktop
+              </a>
+            </li>
+            <li
+              class="p-2">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.figma.com/proto/dcS0TJ1zqMN2FqIFbifemz/Insurance-Platform?page-id=249%3A1843&node-id=349-12033&p=f&viewport=-490%2C58%2C0.23&t=98dfA88dnSnR2flz-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=349%3A12038">
+                View Project On Mobile Device
+              </a>
+            </li>
+          </ul>
+        </mat-menu>
       </div>
       <div
-        class="project md:col-span-1 grid gap-2 border-3 border-sendit-400 rounded-lg p-4">
+        class="order-5 project md:col-span-1 grid gap-2 border-3 border-sendit-400 rounded-lg p-4">
         <div class="">
           <h4 class="text-xl text-sendit-900 font-bold">SendIt</h4>
           <p class="text-sm">
@@ -304,7 +328,7 @@
         </button>
       </div>
       <div
-        class="project md:col-span-1 grid gap-2 border-3 border-vtm-400 rounded-lg p-4">
+        class="order-4 project md:col-span-1 grid gap-2 border-3 border-vtm-400 rounded-lg p-4">
         <div class="">
           <h4 class="text-xl text-vtm-900 font-bold">Virtumed
                                                      Sharecloud</h4>
@@ -340,7 +364,7 @@
         </button>
       </div>
       <div
-        class="project md:col-span-1 grid gap-2 border-3 border-eft-accent rounded-lg p-4">
+        class="order-3 project md:col-span-1 grid gap-2 border-3 border-eft-accent rounded-lg p-4">
         <div class="">
           <h4 class="text-xl text-eft-accent font-bold">
             EFT Flea Market
@@ -374,7 +398,7 @@
           <div class="h-7 bg-eft-900"></div>
         </div>
         <a target="_blank"
-           class="bg-eft-accent rounded-full font-bold text-white text-center p-2 transition duration-150 ease-in-out transform hover:scale-103 hover:shadow-sm cursor-pointer"
+           class="bg-eft-accent rounded-full text-white text-center p-2 transition duration-150 ease-in-out transform hover:bg-eft-500 hover:shadow-sm cursor-pointer"
            rel="noopener noreferrer"
            href="https://xd.adobe.com/view/257ac52b-226d-4756-a54a-bb4582dde667-7029/">
           <button class="cursor-pointer">

@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {Component} from '@angular/core';
+import {MatMenuModule} from '@angular/material/menu';
+import {RouterOutlet} from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [],
+  imports: [MatMenuModule],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
