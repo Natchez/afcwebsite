@@ -89,3 +89,17 @@ html, body {
   overflow-x: hidden;
   box-sizing: border-box;
 }
+
+.cdk-overlay-pane {
+  width: auto !important;
+}
+
+.mat-mdc-menu-panel {
+  max-width: none !important;
+}
+
+.mat-mdc-menu-content {
+  li {
+    overflow: initial;
+  }
+}

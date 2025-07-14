@@ -168,8 +168,9 @@
           <div class="h-7 bg-wds-900"></div>
         </div>
         <button
-          class="bg-wds-600 rounded-full text-white text-center p-2 transition duration-150 ease-in-out transform hover:bg-wds-400 hover:shadow-sm cursor-pointer"
+          class="bg-wds-600 rounded-sm text-white text-center p-2 transition duration-150 ease-in-out transform hover:bg-wds-400 hover:shadow-sm cursor-pointer"
           [matMenuTriggerFor]="wdsmenu"
+          #myTriggerBtn
           href="">View Project
         </button>
         <mat-menu #wdsmenu="matMenu"
@@ -180,8 +181,8 @@
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://www.figma.com/proto/bL5Hj7HlDaLMDzeLnX0DBx/Resume?node-id=429-15&p=f&viewport=-56%2C140%2C0.11&t=UMeWVArJN7hEiYXc-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=546%3A1921&show-proto-sidebar=1">
-                View Project On Desktop
+                href="https://www.figma.com/proto/cHzo5kIJ5kl7bhQJGiBfEL/WhiteDot-Studio?page-id=0%3A1&node-id=4-4174&viewport=-3%2C584%2C0.3&t=1ti228Bd3YNK57VC-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=4%3A4174&show-proto-sidebar=0">
+                Mobile Prototype
               </a>
             </li>
             <li
@@ -189,8 +190,17 @@
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://www.figma.com/proto/bL5Hj7HlDaLMDzeLnX0DBx/Resume?node-id=429-15&p=f&viewport=-877%2C291%2C0.48&t=UMeWVArJN7hEiYXc-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=475%3A5945&show-proto-sidebar=1">
-                View Project On Mobile Device
+                href="https://www.figma.com/proto/bL5Hj7HlDaLMDzeLnX0DBx/Resume?node-id=429-15&p=f&viewport=-56%2C140%2C0.11&t=UMeWVArJN7hEiYXc-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=546%3A1921&show-proto-sidebar=0">
+                Write-Up (Desktop)
+              </a>
+            </li>
+            <li
+              class="p-2">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.figma.com/proto/bL5Hj7HlDaLMDzeLnX0DBx/Resume?node-id=429-15&p=f&viewport=-877%2C291%2C0.48&t=UMeWVArJN7hEiYXc-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=475%3A5945&show-proto-sidebar=0">
+                Write-Up (Mobile)
               </a>
             </li>
           </ul>
@@ -227,7 +237,7 @@
           <div class="h-7 bg-fccb-800"></div>
           <div class="h-7 bg-fccb-900"></div>
         </div>
-        <button class="bg-fccb-600 rounded-full font-bold text-white p-2">
+        <button class="bg-fccb-600 rounded-sm font-bold text-white p-2">
           Coming Soon
         </button>
       </div>
@@ -263,29 +273,49 @@
           <div class="h-7 bg-ins-900"></div>
         </div>
         <button
-          class="bg-ins-600 rounded-full text-white text-center p-2 transition duration-150 ease-in-out transform hover:bg-ins-400 hover:shadow-sm cursor-pointer"
+          class="bg-ins-600 rounded-sm text-white text-center p-2 transition duration-150 ease-in-out transform hover:bg-ins-400 hover:shadow-sm cursor-pointer"
           [matMenuTriggerFor]="insmenu"
-          href="">View Project
+          #myTriggerBtn>
+          View Project
         </button>
         <mat-menu #insmenu="matMenu"
+                  panelClass="project-menu"
                   class="bg-white">
           <ul>
             <li
-              class="p-2">
+              class="p-3">
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://xd.adobe.com/view/6e4c69f4-8840-4c5d-adc8-8d3f5d5de695-3b1f/">
-                View Desktop Application
+                Desktop Prototype (2022)
               </a>
             </li>
             <li
-              class="p-2">
+              class="p-3">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.figma.com/proto/dcS0TJ1zqMN2FqIFbifemz/Insurance-Platform?node-id=458-7707&p=f&viewport=259%2C2484%2C0.4&t=kBDvOiZMyLPrr24E-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=563%3A10985">
+                Desktop Prototype (2025)
+              </a>
+            </li>
+            <li
+              class="p-3">
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.figma.com/proto/dcS0TJ1zqMN2FqIFbifemz/Insurance-Platform?page-id=249%3A1843&node-id=349-12033&p=f&viewport=-490%2C58%2C0.23&t=98dfA88dnSnR2flz-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=349%3A12038">
-                View Mobile Application
+                Mobile Prototype
+              </a>
+            </li>
+            <li
+              class="p-3">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.figma.com/design/dcS0TJ1zqMN2FqIFbifemz/Insurance-Platform?node-id=458-7707&t=8DJG8Cmc7JoMm4Kv-1">
+                Figma File
               </a>
             </li>
           </ul>
@@ -323,7 +353,7 @@
           <div class="h-7 bg-sendit-900"></div>
         </div>
         <button
-          class="bg-sendit-600 rounded-full font-bold text-white p-2">
+          class="bg-sendit-600 rounded-sm font-bold text-white p-2">
           Coming Soon
         </button>
       </div>
@@ -359,7 +389,7 @@
           <div class="h-7 bg-vtm-800"></div>
           <div class="h-7 bg-vtm-900"></div>
         </div>
-        <button class="bg-vtm-900 rounded-full font-bold text-white p-2">
+        <button class="bg-vtm-900 rounded-sm font-bold text-white p-2">
           Coming Soon
         </button>
       </div>
@@ -397,14 +427,34 @@
           <div class="h-7 bg-eft-800"></div>
           <div class="h-7 bg-eft-900"></div>
         </div>
-        <a target="_blank"
-           class="bg-eft-accent rounded-full text-white text-center p-2 transition duration-150 ease-in-out transform hover:bg-eft-500 hover:shadow-sm cursor-pointer"
-           rel="noopener noreferrer"
-           href="https://xd.adobe.com/view/257ac52b-226d-4756-a54a-bb4582dde667-7029/">
-          <button class="cursor-pointer">
-            View Project
-          </button>
-        </a>
+        <button
+          class="bg-eft-accent rounded-sm text-white text-center p-2 transition duration-150 ease-in-out transform hover:bg-eft-500 hover:shadow-sm cursor-pointer"
+          [matMenuTriggerFor]="eftmenu"
+          #myTriggerBtn
+          href="">View Project
+        </button>
+        <mat-menu #eftmenu="matMenu"
+                  class="bg-white">
+          <ul>
+            <li
+              class="p-2">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://xd.adobe.com/view/6e4c69f4-8840-4c5d-adc8-8d3f5d5de695-3b1f/">
+                Prototype (2020)
+              </a>
+            </li>
+            <li
+              class="p-2">
+              <a
+                target="_blank"
+                rel="noopener noreferrer">
+                Prototype (2025 - Coming Soon)
+              </a>
+            </li>
+          </ul>
+        </mat-menu>
       </div>
     </article>
   </section>
