@@ -27,7 +27,6 @@ export class App implements AfterViewInit {
     this.menuTriggers
       .forEach((trigger, i) => {
         trigger.menuOpened.subscribe(() => {
-
           // Grab all Btns width if they exist
           const btn = this.allTriggerBtns.get(i)?.nativeElement;
           if (!btn) return;

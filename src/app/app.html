@@ -167,28 +167,28 @@
         <mat-menu #prevworkmenu="matMenu"
                   class="bg-white">
           <ul>
-            <li
-              class="p-2">
+            <li>
               <a
                 target="_blank"
+                class="w-full p-3 flex"
                 rel="noopener noreferrer"
                 href="https://www.figma.com/deck/Xj2qGCvOdy6QwcpjNntqE7/ICU-Work?node-id=16-21469&viewport=-25767%2C-124%2C0.74&t=Rf09mKoaAhRyiMlN-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1">
                 ICU Medical
               </a>
             </li>
-            <li
-              class="p-2">
+            <li>
               <a
                 target="_blank"
+                class="w-full p-3 flex"
                 rel="noopener noreferrer"
                 href="https://www.figma.com/deck/iPCzGUxzUUzL4ONPGrQv8F/Priority-Work?node-id=2023-57884&viewport=-3504%2C-169%2C0.77&t=f6LdrgcmBN5p3Pzs-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1">
                 Priority
               </a>
             </li>
-            <li
-              class="p-2">
+            <li>
               <a
                 target="_blank"
+                class="w-full p-3 flex"
                 rel="noopener noreferrer"
                 href="https://www.figma.com/proto/wX5nIQ7cyzBapwJCzglBme/Priority-Interview-Problem--2022-?page-id=0%3A1&node-id=2-2&viewport=868%2C399%2C0.19&t=Ao4IhQc5uNcAWp49-1&scaling=min-zoom&content-scaling=fixed">
                 Priority Interview Exercise
@@ -237,28 +237,28 @@
         <mat-menu #wdsmenu="matMenu"
                   class="bg-white">
           <ul>
-            <li
-              class="p-2">
+            <li>
               <a
                 target="_blank"
+                class="w-full p-3 flex"
                 rel="noopener noreferrer"
                 href="https://www.figma.com/proto/cHzo5kIJ5kl7bhQJGiBfEL/WhiteDot-Studio?page-id=0%3A1&node-id=4-4174&viewport=-3%2C584%2C0.3&t=1ti228Bd3YNK57VC-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=4%3A4174&show-proto-sidebar=0">
                 Mobile Prototype
               </a>
             </li>
-            <li
-              class="p-2">
+            <li>
               <a
                 target="_blank"
+                class="w-full p-3 flex"
                 rel="noopener noreferrer"
                 href="https://www.figma.com/proto/bL5Hj7HlDaLMDzeLnX0DBx/Resume?node-id=429-15&p=f&viewport=-56%2C140%2C0.11&t=UMeWVArJN7hEiYXc-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=546%3A1921&show-proto-sidebar=0">
                 Write-Up (Desktop)
               </a>
             </li>
-            <li
-              class="p-2">
+            <li>
               <a
                 target="_blank"
+                class="w-full p-3 flex"
                 rel="noopener noreferrer"
                 href="https://www.figma.com/proto/bL5Hj7HlDaLMDzeLnX0DBx/Resume?node-id=429-15&p=f&viewport=-877%2C291%2C0.48&t=UMeWVArJN7hEiYXc-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=475%3A5945&show-proto-sidebar=0">
                 Write-Up (Mobile)
@@ -298,9 +298,27 @@
           <div class="h-7 bg-fccb-800"></div>
           <div class="h-7 bg-fccb-900"></div>
         </div>
-        <button class="bg-fccb-600 rounded-sm font-bold text-white p-2">
-          Coming Soon
+        <button
+          [matMenuTriggerFor]="fccbmenu"
+          #myTriggerBtn
+          href=""
+          class="bg-fccb-600 rounded-sm font-bold text-white p-2 hover:bg-fccb-400 hover:shadow-sm cursor-pointer transition duration-150 ease-in-out transform">
+          View Project
         </button>
+        <mat-menu #fccbmenu="matMenu"
+                  class="bg-white">
+          <ul>
+            <li>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-full p-3 flex"
+                href="https://www.figma.com/proto/KnydGlFhrtmgswmwOpTrad/FCCB?page-id=2134%3A3396&node-id=2670-7799&p=f&viewport=348%2C256%2C0.1&t=vzjlWDv8Wah0NhRv-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2670%3A7799">
+                Mobile Prototype
+              </a>
+            </li>
+          </ul>
+        </mat-menu>
       </div>
       <div
         class="order-2 project md:col-span-1 grid gap-2 border-3 border-ins-400 rounded-lg p-4">
@@ -343,37 +361,37 @@
                   panelClass="project-menu"
                   class="bg-white">
           <ul>
-            <li
-              class="p-3">
+            <li>
               <a
                 target="_blank"
+                class="w-full p-3 flex"
                 rel="noopener noreferrer"
                 href="https://xd.adobe.com/view/6e4c69f4-8840-4c5d-adc8-8d3f5d5de695-3b1f/">
                 Desktop Prototype (2022)
               </a>
             </li>
-            <li
-              class="p-3">
+            <li>
               <a
                 target="_blank"
+                class="w-full p-3 flex"
                 rel="noopener noreferrer"
                 href="https://www.figma.com/proto/dcS0TJ1zqMN2FqIFbifemz/Insurance-Platform?node-id=458-7707&p=f&viewport=259%2C2484%2C0.4&t=kBDvOiZMyLPrr24E-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=563%3A10985">
                 Desktop Prototype (2025)
               </a>
             </li>
-            <li
-              class="p-3">
+            <li>
               <a
                 target="_blank"
+                class="w-full p-3 flex"
                 rel="noopener noreferrer"
                 href="https://www.figma.com/proto/dcS0TJ1zqMN2FqIFbifemz/Insurance-Platform?page-id=249%3A1843&node-id=349-12033&p=f&viewport=-490%2C58%2C0.23&t=98dfA88dnSnR2flz-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=349%3A12038">
                 Mobile Prototype
               </a>
             </li>
-            <li
-              class="p-3">
+            <li>
               <a
                 target="_blank"
+                class="w-full p-3 flex"
                 rel="noopener noreferrer"
                 href="https://www.figma.com/design/dcS0TJ1zqMN2FqIFbifemz/Insurance-Platform?node-id=458-7707&t=8DJG8Cmc7JoMm4Kv-1">
                 Figma File
