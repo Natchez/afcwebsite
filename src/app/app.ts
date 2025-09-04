@@ -44,12 +44,12 @@ export class App {
         ' wireframes, low and high-fidelity designs, traceability\n' +
         ' documents, proofs of concepts, and more. This link is\n' +
         ' password protected, please reach out if you’d like access.',
-      technologies: ['Angular', 'TypeScript', 'TailwindCSS', 'Node.js', 'Figma'],
+      technologies: ['Sketch', 'Adobe CC', 'Principle', 'Node.js', 'Figma'],
       image: './assets/workexamples.png',
       links: [
-        {name: 'Portfolio', url: 'https://example.com/portfolio'},
-        {name: 'Github', url: 'https://github.com/example'},
-        {name: 'Case Studies', url: 'https://example.com/case-studies'}
+        {name: 'Priority Work', url: 'https://www.figma.com/deck/iPCzGUxzUUzL4ONPGrQv8F/Priority-Work?node-id=2023-57884&t=kVpTiPWMGerie1XM-1'},
+        {name: 'Priority Interview Exercise Work', url: 'https://github.com/example'},
+        {name: 'ICU Medical', url: 'https://example.com/case-studies'}
       ],
       app: 'wds'
     },
