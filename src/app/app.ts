@@ -4,7 +4,6 @@ import {
 import {MatMenuModule} from '@angular/material/menu';
 import {Project, ProjectInterface} from './components/project/project';
 
-// import {NgStyle} from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -14,8 +13,7 @@ import {Project, ProjectInterface} from './components/project/project';
 })
 export class App {
 
-  protected panelWidth = 0;
-  protected title = 'afcwebsite';
+  title = 'afcwebsite';
   projects: ProjectInterface[] = [
     {
       title: 'Design Library',
@@ -31,7 +29,10 @@ export class App {
           url: 'https://www.notion.so/ND-Design-Library-25478bd457138011adbadb8bdcc1adcb?'
         },
         {name: 'Github', url: 'https://github.com/Natchez/Natchez-Designs-Library'},
-        {name: 'Storybook', url: 'https://master--68b314858f5546541963514c.chromatic.com/?path=/docs/components-button--docs'},
+        {
+          name: 'Storybook',
+          url: 'https://master--68b314858f5546541963514c.chromatic.com/?path=/docs/components-button--docs'
+        },
         {name: 'Chromatic', url: 'https://www.chromatic.com/builds?appId=68b314858f5546541963514c'}
       ],
       app: 'wds'
@@ -47,9 +48,15 @@ export class App {
       technologies: ['Sketch', 'Adobe CC', 'Principle', 'Node.js', 'Figma'],
       image: './assets/workexamples.png',
       links: [
-        {name: 'Priority Work', url: 'https://www.figma.com/deck/iPCzGUxzUUzL4ONPGrQv8F/Priority-Work?node-id=2023-57884&t=kVpTiPWMGerie1XM-1'},
+        {
+          name: 'Priority Work',
+          url: 'https://www.figma.com/deck/iPCzGUxzUUzL4ONPGrQv8F/Priority-Work?node-id=2023-57884&t=kVpTiPWMGerie1XM-1'
+        },
         {name: 'Priority Interview Exercise Work', url: 'https://github.com/example'},
-        {name: 'ICU Medical', url: 'https://example.com/case-studies'}
+        {
+          name: 'ICU Medical',
+          url: 'https://www.figma.com/deck/Xj2qGCvOdy6QwcpjNntqE7/ICU-Work?node-id=1-42&t=7SIxgVwSyZW5zqeb-1'
+        }
       ],
       app: 'wds'
     },
@@ -58,12 +65,17 @@ export class App {
       description:
         'A cutting-edge design and development studio specializing in custom web and mobile applications.\n' +
         'We focus on delivering lightweight, scalable, and dynamic solutions tailored to user needs.',
-      technologies: ['Angular', 'TypeScript', 'TailwindCSS', 'Firebase', 'Figma'],
+      technologies: ['Angular', 'TypeScript', 'Ionic', 'Supbase', 'Figma', 'Adobe CC'],
       image: './assets/wds.png',
       links: [
-        {name: 'Website', url: 'https://whitedotstudio.com'},
-        {name: 'Github', url: 'https://github.com/whitedotstudio'},
-        {name: 'Dribbble', url: 'https://dribbble.com/whitedotstudio'}
+        {
+          name: 'Case Study',
+          url: 'https://www.figma.com/proto/cHzo5kIJ5kl7bhQJGiBfEL/WhiteDot-Studio?page-id=297%3A2100&node-id=297-2350&viewport=-756%2C86%2C0.23&t=GGPdRZ98iANBB8FK-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=297%3A2350'
+        },
+        {
+          name: 'Mobile Prototype',
+          url: 'https://www.figma.com/proto/cHzo5kIJ5kl7bhQJGiBfEL/WhiteDot-Studio?page-id=0%3A1&node-id=4-4174&viewport=-3%2C584%2C0.3&t=1ti228Bd3YNK57VC-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=4%3A4174&show-proto-sidebar=0'
+        },
       ],
       app: 'wds'
     },
@@ -72,17 +84,24 @@ export class App {
       description:
         'An advanced platform streamlining insurance policy management, customer servicing, and claims processing.\n' +
         'Built with a focus on scalability, efficiency, and a seamless user experience for both agents and customers.',
-      technologies: ['Angular', 'TypeScript', 'Node.js', 'MongoDB', 'AWS', 'Material Design'],
+      technologies: ['Figma', 'Adobe XD'],
       image: './assets/insurance.png',
       links: [
         {
-          name: 'Product Overview',
-          url: 'https://example.com/next-insurance-management'
+          name: 'Desktop Prototype (2022)',
+          url: 'https://xd.adobe.com/view/6e4c69f4-8840-4c5d-adc8-8d3f5d5de695-3b1f/'
         },
-        {name: 'Github', url: 'https://github.com/example/next-insurance'},
         {
-          name: 'Documentation',
-          url: 'https://example.com/docs/next-insurance'
+          name: 'Desktop Prototype (2025)',
+          url: 'https://www.figma.com/proto/dcS0TJ1zqMN2FqIFbifemz/Insurance-Platform?node-id=458-7707&p=f&viewport=259%2C2484%2C0.4&t=kBDvOiZMyLPrr24E-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=563%3A10985'
+        },
+        {
+          name: 'Mobile Prototype',
+          url: 'https://www.figma.com/proto/dcS0TJ1zqMN2FqIFbifemz/Insurance-Platform?page-id=249%3A1843&node-id=349-12033&p=f&viewport=-490%2C58%2C0.23&t=98dfA88dnSnR2flz-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=349%3A12038'
+        },
+        {
+          name: 'Figma File',
+          url: 'https://www.figma.com/design/dcS0TJ1zqMN2FqIFbifemz/Insurance-Platform?node-id=458-7707&t=8DJG8Cmc7JoMm4Kv-1'
         }
       ],
       app: 'ins'
@@ -92,12 +111,17 @@ export class App {
       description:
         'A digital recipe management application designed for food enthusiasts and professional chefs.\n' +
         'Features include customizable recipe creation, meal planning tools, and integrated shopping lists.',
-      technologies: ['Angular', 'TailwindCSS', 'Firebase', 'Cloud Functions', 'Figma'],
+      technologies: ['Angular', 'TailwindCSS', 'Supbase', 'AWS', 'Figma', 'Ionic'],
       image: './assets/fccb.png',
       links: [
-        {name: 'Live Demo', url: 'https://example.com/fc-cookbook'},
-        {name: 'Github', url: 'https://github.com/example/fc-cookbook'},
-        {name: 'User Guide', url: 'https://example.com/docs/fc-cookbook'}
+        {
+          name: 'Mobile Prototype',
+          url: 'https://www.figma.com/proto/KnydGlFhrtmgswmwOpTrad/FCCB?page-id=2134%3A3396&node-id=2670-7799&p=f&viewport=348%2C256%2C0.1&t=vzjlWDv8Wah0NhRv-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2670%3A7799'
+        },
+        {
+          name: 'Desktop Prototype',
+          url: 'https://www.figma.com/proto/KnydGlFhrtmgswmwOpTrad/FCCB?page-id=2330%3A4565&node-id=2883-23519&p=f&viewport=407%2C155%2C0.32&t=4btAjki5dhYnhhwS-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2883%3A23519'
+        },
       ],
       app: 'fccb'
     }
