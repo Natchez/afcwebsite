@@ -17,10 +17,10 @@ export class App {
   projects: ProjectInterface[] = [
     {
       title: 'Design Library',
-      description: '“Lightweight, responsive Angular components built for' +
+      description: 'Lightweight, responsive Angular components built for' +
         ' speed, reuse, and consistency across my personal projects. Documented ' +
         'in Storybook, tested with Chromatic, and designed with accessibility ' +
-        'in mind to keep development fast and reliable.',
+        'in mind.',
       technologies: ['Figma', 'Angular', 'Chromatic', 'Storybook', 'NotionAI'],
       image: './assets/buttons.png',
       links: [
@@ -28,12 +28,18 @@ export class App {
           name: 'Notion Docs',
           url: 'https://www.notion.so/ND-Design-Library-25478bd457138011adbadb8bdcc1adcb?'
         },
-        {name: 'Github', url: 'https://github.com/Natchez/Natchez-Designs-Library'},
+        {
+          name: 'Github',
+          url: 'https://github.com/Natchez/Natchez-Designs-Library'
+        },
         {
           name: 'Storybook',
           url: 'https://master--68b314858f5546541963514c.chromatic.com/?path=/docs/components-button--docs'
         },
-        {name: 'Chromatic', url: 'https://www.chromatic.com/builds?appId=68b314858f5546541963514c'}
+        {
+          name: 'Chromatic',
+          url: 'https://www.chromatic.com/builds?appId=68b314858f5546541963514c'
+        }
       ],
       app: 'wds'
 
@@ -52,7 +58,10 @@ export class App {
           name: 'Priority Work',
           url: 'https://www.figma.com/deck/iPCzGUxzUUzL4ONPGrQv8F/Priority-Work?node-id=2023-57884&t=kVpTiPWMGerie1XM-1'
         },
-        {name: 'Priority Interview Exercise Work', url: 'https://github.com/example'},
+        {
+          name: 'Priority Interview Exercise Work',
+          url: 'https://github.com/example'
+        },
         {
           name: 'ICU Medical',
           url: 'https://www.figma.com/deck/Xj2qGCvOdy6QwcpjNntqE7/ICU-Work?node-id=1-42&t=7SIxgVwSyZW5zqeb-1'
@@ -62,9 +71,9 @@ export class App {
     },
     {
       title: 'White Dot Studio',
-      description:
-        'A cutting-edge design and development studio specializing in custom web and mobile applications.\n' +
-        'We focus on delivering lightweight, scalable, and dynamic solutions tailored to user needs.',
+      description: 'A modern bowling platform for bowlers and lane' +
+        ' managers, offering ball-specific analytics, score tracking,' +
+        ' league support, and lane management tools across mobile and desktop',
       technologies: ['Angular', 'TypeScript', 'Ionic', 'Supbase', 'Figma', 'Adobe CC'],
       image: './assets/wds.png',
       links: [
@@ -81,9 +90,9 @@ export class App {
     },
     {
       title: 'Insurance Management',
-      description:
-        'An advanced platform streamlining insurance policy management, customer servicing, and claims processing.\n' +
-        'Built with a focus on scalability, efficiency, and a seamless user experience for both agents and customers.',
+      description: 'A modern redesign of a Colorado-based workers’ compensation ' +
+        'insurance platform with React and MUI in mind to create a' +
+        ' cleaner, more intuitive, and accessible platform',
       technologies: ['Figma', 'Adobe XD'],
       image: './assets/insurance.png',
       links: [
@@ -109,8 +118,8 @@ export class App {
     {
       title: 'FC Cookbook',
       description:
-        'A digital recipe management application designed for food enthusiasts and professional chefs.\n' +
-        'Features include customizable recipe creation, meal planning tools, and integrated shopping lists.',
+        'A digital recipe management application designed for friends and family.\n' +
+        'Features include customizable recipe creation, and shopping lists.',
       technologies: ['Angular', 'TailwindCSS', 'Supbase', 'AWS', 'Figma', 'Ionic'],
       image: './assets/fccb.png',
       links: [
